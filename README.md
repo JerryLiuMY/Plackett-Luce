@@ -1,4 +1,4 @@
-# Plackett-Luce
+# Bayesian Inference on Plackett-Luce Model
 <p>
     <a href="https://cran.r-project.org/package=Seurat">
         <img src="https://www.r-pkg.org/badges/version/Seurat"
