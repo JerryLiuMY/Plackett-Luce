@@ -1,0 +1,71 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath} % math tool
+\usepackage{amssymb} % math symbol
+\usepackage{graphicx} % graphics
+\usepackage{subfig}
+
+
+%%% Customize Theme %%%%%%%%%%%%%%%%%%%%%%
+\usetheme{Madrid}
+\definecolor{myRed}{RGB}{120,4,4}
+\definecolor{myOrange}{RGB}{227, 125, 0}
+\setbeamercolor*{structure}{bg=myRed!20,fg=myRed!90}
+\setbeamercolor*{palette primary}{use=structure,fg=white,bg=structure.fg} %?
+\setbeamercolor*{palette secondary}{use=structure,fg=myRed,bg=white}
+    %bottom left of footer & bar between title & top bubbles
+\setbeamercolor*{palette tertiary}{use=structure,fg=white,bg=myRed}
+\setbeamercolor{frametitle}{bg=myRed!85,fg=white}
+\setbeamercolor*{titlelike}{parent=palette primary}
+%\setbeamercolor{titlelike}{parent=palette primary,fg=structure.fg!50!myRed}
+
+%for miniframe (very top) AND center footer
+\setbeamercolor{section in head/foot}{fg=myOrange, bg=white}
+
+\title{BUSN41916 Presentation: Ranking Poker Players with Bayesian Plackett-Luce Ranking Models}
+% Seniority affects game ranking?
+% Modeling the ranking of Poker players with Bayesian Plackett-Luce Ranking Models
+\author{Mingyu Liu}
+\date{December 1st, 2022}
+
+\begin{document}
+\maketitle
+\begin{frame}{Contents}
+    \begin{itemize}
+        \item Introduction
+        \item Model Description
+        \item MCMC and Model Evaluation
+        \item Conclusion
+    \end{itemize}
+\end{frame}
+
+\input{content/1_intro}
+\input{content/2_model}
+\input{content/3_inference}
+
+\begin{frame}{Conclusions}
+\begin{itemize}
+\item Our analysis suggests the given data provide more evidence in favour of the simpler observation model (model 1) without seniority rank covariate.
+
+\item Potential Limitations:
+\begin{itemize}
+    \item Not all players directly play with each other.
+    \item Relatively lower number of observations for several players.
+\end{itemize}
+
+\item Potential Extensions:
+\begin{itemize}
+    \item A wider class of prior models.
+    \item Better computational methodology.
+\end{itemize}
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\Huge Thank You!
+\end{center}
+\end{frame}
+
+\end{document}
